@@ -27,34 +27,50 @@ body{
    
     
     grid-area: 1/1/18/6;
+    background-color: greenyellow;
 }
 .frame-2{
    
     grid-area: 1/6/3/25;
+    
+    background-color: purple;
+    
 
 }
 .frame-3{
    
     grid-area: 3/6/8/12;
+    
+    background-color: greenyellow;
 }
 .frame-4{
    
     grid-area: 3/12/8/18;
+    
+    background-color: greenyellow;
 }
 .frame-5{
   
     grid-area: 3/18/18/25;
+    
+    background-color: purple;
 }
 .frame-6{
     
     grid-area: 8/6/18/12;
     
+    background-color: purple;
+    
 }
 .frame-7{
   
     grid-area: 8/12/13/18;
+    background-color: purple;
+    
 }
 .frame-8{
 
     grid-area:13/12/18/18;
+    
+    background-color: greenyellow;
 }
