@@ -23,7 +23,7 @@
 }
 :root{
     --clr--primary:#f1f5fb;
-    --clr--secondry:#dee9fb;
+    --clr--secondry:#8c8e91;
     --clr--black:#252525;
     --clr--white:#ffffff;
 }
@@ -50,7 +50,7 @@ body{
    
     
     grid-area: 1/1/18/6;
-    background-color: greenyellow;
+    background-color: var(--clr--primary)
 }
 .frame-2{
    
@@ -64,13 +64,76 @@ body{
    
     grid-area: 3/6/8/12;
     
-    background-color: greenyellow;
+    background-color: var(--clr--primary);
+
+    color: var(--clr--black);
+
+    position: relative;
+
+    font-style: normal;
+    
+}
+
+.frame-3 h4{
+    position: absolute;
+
+    top: 2vw;
+
+    left: 2vw;
+
+    opacity: 0.5;
+
+    font-family: regular;
+
+    font-size: 1.4vw;
+
+    font-weight: lighter;
+
+   
+
+}
+
+.frame-3 span{
+
+    font-family: primary;
+
+    position: absolute;
+
+    top: 5vw;
+
+    left: 2vw;
+
+    font-size: 3vw;
 }
 .frame-4{
    
     grid-area: 3/12/8/18;
     
-    background-color: greenyellow;
+    background-color:var(--clr--primary);
+
+    position: relative;
+
+    font-style: normal;
+    
+}
+
+.frame-4 h4{
+
+    position: absolute;
+
+    top: 2vw;
+
+    left: 2vw;
+
+    opacity: 0.5;
+
+    font-family: regular;
+
+    font-size: 1.4vw;
+
+    font-weight: lighter;
+
+    
 }
 .frame-5{
   
@@ -95,5 +158,5 @@ body{
 
     grid-area:13/12/18/18;
     
-    background-color: greenyellow;
+    background-color: var(--clr--primary)
 }
