@@ -1,8 +1,31 @@
+@font-face{
+    font-family: primary;
+    src: url("./FONT/PlusJakartaSans-Bold.ttf");
+}
+@font-face {
+    font-family: regular;
+    src: url("./FONT/PlusJakartaSans-Medium.ttf");
+}
+@font-face {
+    font-family: semi;
+    src: url("./FONT/PlusJakartaSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: lights;
+    src: url("./FONT/PlusJakartaSans-Light.ttf");
+}
+
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+}
+:root{
+    --clr--primary:#f1f5fb;
+    --clr--secondry:#dee9fb;
+    --clr--black:#252525;
+    --clr--white:#ffffff;
 }
 body{
 
@@ -20,7 +43,7 @@ body{
 
 }
 .frame{
-    background-color: #ecf3ff;
+    background-color: var(--clr--primary);
     border-radius: 10px;
 }
 .frame-1{
