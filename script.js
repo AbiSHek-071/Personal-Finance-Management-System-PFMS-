@@ -7,13 +7,19 @@ console.log(backbtn);
 
 function navigation(){
     navgrow.style.display = "flex";
+   
     dashboard.classList.add("container_ease_in");
     navgrow.classList.add("nav_ease_in");
+    navshot.classList.add("navshot_animation");
+ 
+    
 
 }
 function shrink(){
     navgrow.style.display = "none";
     dashboard.classList.remove("container_ease_in");
+    navshot.classList.remove("navshot_animation");
+   
 }
 
 menu.addEventListener("click",navigation);
