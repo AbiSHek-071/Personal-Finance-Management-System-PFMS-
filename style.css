@@ -49,6 +49,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     transition: width 0.3s ease;
+
     
     
     
@@ -95,14 +96,19 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    display: none;  
+    /* display: none;   */
+    transform: translateX(-17vw);
+    
     transition: width 0.3s ease;
+    transition: transform 0.5s ease;
+    z-index: 10;
     
    
 }
 .navgrow_anm{
-    opacity: 100%;
-    transition: display 0.3s ease;
+    transform: translateX(0);
+  
+    transition: transform 0.5s ease;
 }
 
 .back_arrow{
@@ -126,9 +132,11 @@ body{
 }
 .profile h3{
     font-family:primary;
+    font-size: 1.2vw;
 }
 .profile span{
     font-family: regular;
+    font-size: .8vw;
     opacity: 40%;
 }
 .profile_pic{
@@ -174,18 +182,83 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;align-items: flex-end;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2vw;
     width: 100%;
     height: 100%;
 
     
 
 }
+
+
+
+
+
+.taskbar{
+    width: 55vw;
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+
+   
+}
+.search-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.messeg{
+   display: flex;
+   gap: 1vw;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2vw;
+    
+   
+}
+.messeg img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+
+
+.search-input {
+    
+    width: 16vw;
+    padding: 0.532vw;
+    border: none;
+    border-radius: 16px;
+    padding-left: 2vw;
+    transition: transform 0.3s ease;
+    background: linear-gradient(to bottom right, rgba(222, 233, 251, .7), rgba(217, 217, 217, 0.44), rgba(222, 233, 251, .2));
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container{
     
-    width: 55%;
-    height: 75%;
+    width: 55vw;
+    height: 38vw;
     margin-bottom: 2vw;
 
     display: grid;
@@ -195,25 +268,25 @@ main{
     transition: transform 0.3s ease;
 }
 .container3{
-    margin: 10px;
+    margin: 0.532vw;
 }
 .container4{
-    margin: 10px;
+    margin: 0.532vw;
 }
 .container6{
    
-    margin: 10px;
+    margin: 0.532vw;
     
 }
 .container7{
-    margin: 10px;
+    margin: 0.532vw;
     width: 100%;
     height: 100%;
     position: relative;
    
 }
 .container8{
-    margin: 10px;
+    margin: 0.532vw;
   }
 
 
@@ -245,17 +318,17 @@ main{
 }
 .frame-3 h5{
     color: var(--clr--black);
-    font-size: 1.4rem;
+    font-size: 1.191vw;
     opacity: 50%;
     font-family: primary;
-    margin-bottom: .5rem;
+    margin-bottom: 0.426vw;
 }
 
 .frame-3 h3{
     color: var(--clr--black);
-    font-size: 3.2rem;
+    font-size: 2.723vw;
     font-family: primary;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.362vw;
 } 
 .classifications{
     display: flex;
@@ -271,19 +344,19 @@ main{
   
 }
 .income img{
-    width: 3rem;
-    height: 3rem;
-    margin-right: .3rem;
+    width: 2.553vw;
+    height: 2.553vw;
+    margin-right: 0.255vw;
 }
 .income h6{
     font-family: regular;
-    font-size: .8rem;
+    font-size: 0.681vw;
     display: inline;
    
 }
 .income span{
     font-family: regular;
-    font-size: .6rem;
+    font-size: 0.511vw;
     display: inline-block;
 }
 .row{
@@ -300,18 +373,18 @@ main{
 }
 .expenses h6{
     font-family: regular;
-    font-size: .8rem;
+    font-size: 0.681vw;
     display: inline;
 }
 .expenses span{
     font-family: regular;
-    font-size: .6rem;
+    font-size: 0.511vw;
     display: inline-block;
 }
 .expenses img{
-    width: 3rem;
-    height: 3rem;
-    margin-right: .3rem;
+    width: 2.553vw;
+    height: 2.553vw;
+    margin-right: 0.255vw;
 }
 
 
@@ -331,10 +404,10 @@ main{
 
 .frame-4 h3{
     color: var(--clr--black);
-    font-size: 1.4rem;
+    font-size: 1.191vw;
     opacity: 50%;
     font-family: primary;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.362vw;
     
     background-color:var(--clr--primary);
    
@@ -345,23 +418,27 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: 0.426vw;
+    margin-bottom: 0.426vw;
 }
 .frame-4 hr{
-    margin-bottom: 2rem;
+    margin-bottom: 1.702vw;
 }
 .goals img{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.277vw;
+    height: 1.277vw;
+}
+.goals h4{
+    font-size: .8vw;
 }
 .goals h5{
     font-family:primary ;
+    font-size: .8vw;
 }
 .goals h6{
     font-family: regular;
     opacity: 40%;
-    font-size: .7rem;
+    font-size: 0.596vw;
 }
 .goals h5{
     font-family:primary;
@@ -373,49 +450,49 @@ main{
 .frame-5{
   
     grid-area: 1/3/4/3; 
-    padding: 1.6rem;
+    padding: 1.362vw;
     
 }
 .partition{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-bottom: .8rem;
+    margin-bottom: 0.681vw;
 }
 .vl {
     border-left: 1.2px solid var(--clr--black);
-    height: 1.6rem;
+    height: 1.362vw;
   }
 .partition span{
     font-family: regular;
-    font-size: .8rem;
+    font-size: 0.681vw;
     opacity: 50%;
 }
 .acc_cat{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-bottom: .8rem;
+    margin-bottom: 0.681vw;
 }
 .acc_cat button{
-    width: 8rem;
-    height: 2rem;
+    width: 6.809vw;
+    height: 1.702vw;
     background-color: var(--clr--secondry);
     border: none;
     border-radius: 10px;
     font-family: primary;
-    font-size: 1.2rem;
+    font-size: 1.021vw;
 }
 .notes{
     width: 100%;
     height: 20%;
     background-color: var(--clr--secondry);
-    padding: 10px;
+    padding: 0.532vw;
     border-radius: 10px;
-    margin-bottom: .8rem;
+    margin-bottom: 0.681vw;
 }
 .notes p{
-    font-size: .8rem;
+    font-size: 0.681vw;
     font-family: regular;
     opacity: 50%;
 }
@@ -426,25 +503,25 @@ main{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 0.532vw;
     border-radius: 10px;
-    margin-bottom: .8rem;
+    margin-bottom: 0.681vw;
     font-family: primary;
-    font-size: 2rem;
+    font-size: 1.702vw;
 }
 .result img{
-    margin-left: .8rem;
+    margin-left: 0.681vw;
     opacity: 48%;
 }
 .calc{
     width: 100%;
     height: 45%;
     background-color: var(--clr--primary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.702vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: .8rem;
+    gap: 0.681vw;
 }
 .btn{
     display: flex;
@@ -452,7 +529,7 @@ main{
     justify-content: center;
     border: 1px solid #347cff;
     font-family: primary;
-    font-size: 2rem;
+    font-size: 1.702vw;
     border-radius: 10px;
     
 }
@@ -528,6 +605,7 @@ main{
 }
 .date_time span{
     opacity: 50%;
+    font-size: .8vw;
 }
 
 
@@ -545,13 +623,13 @@ main{
 }
 .frame-6 h3{
     font-family: primary;
-    font-size: 1.4rem;
+    font-size: 1.191vw;
     color: var(--clr--black);
-    margin-bottom: 1rem;
+    margin-bottom: 0.851vw;
 }
 
 .container6 hr{
-    margin-bottom: 1rem;
+    margin-bottom: 0.851vw;
 }
 .frame-7{
   
@@ -560,75 +638,77 @@ main{
 
 .frame-7 h3{
     font-family: primary;
-    font-size: 1.4rem;
+    font-size: 1.191vw;
     color: var(--clr--black);
-    margin-bottom: 1rem;
+    margin-bottom: 0.851vw;
 }
 .graph{
     width: 90%;
     height: 70%;
-    border: 1px solid black;
+    border: 0.053vw solid black;
     border-top: none;
     border-right: none;
     display: flex;
     justify-content: flex-start;
-    gap: 7px;
+    gap: 0.372vw;
     align-items: flex-end;
-    padding-inline: 5px;
+    padding-inline: 0.266vw;
 }
 .in_cm{
-    width: 20px;
-    height: 60px;
+    width: 1.064vw;
+    height: 3.191vw;
     background-color: #e27575;
 }
 .ex_cm{
    
-    width: 20px;
-    height: 50px;
+    width: 1.064vw;
+    height: 2.66vw;
     background-color: #94bb82;
 }
 .in_1{
-    height: 120px;
+    height: 6.383vw;
 }
 .in_2{
-    height: 70px;
+    height: 3.723vw;
 }
 .in_3{
-    height: 90px;
+    height: 4.787vw;
 }
 .in_4{
-    height: 150px;
+    height: 7.979vw;
 }
 .ex_1{
-    height: 20px;
+    height: 1.064vw;
 }
 .ex_2{
-    height: 120px;
+    height: 6.383vw;
 }
 .ex_3{
-    height: 100px;
+    height: 5.319vw;
 }
 .ex_4{
-    height: 60px;
+    height: 3.191vw;
 }
 .in_sp{
-    width: 10px;
-    height: 10px;
+    width: 0.532vw;
+    height: 10.002px;
+    margin-right: .2vw;
 }
 .sample{
    position: absolute;
-   right: 25px;
-   top: 50px;
+   right: 1.33vw;
+   top: 2.66vw;
     
 }
 .income_sp{
     display: flex;   
+    margin-bottom: .2vw;
 }
 .expense_sp{
     display: flex;
 }
 .sample span{
-    font-size: 12px;
+    font-size: 0.638vw;
 }
 .frame-8{
 
@@ -641,28 +721,39 @@ main{
     
 }
 
+.frame-8 h3{
+    font-family: primary;
+    font-size: 1.191vw;
+    color: var(--clr--black);
+    margin-bottom: 0.851vw;
+} 
 
 .pays{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: 0.426vw;
+    margin-bottom: 0.426vw;
     
 }
 
 .pays img{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.277vw;
+    height: 1.277vw;
 }
 .pays h5{
     font-family:primary ;
+    font-size: .8vw;
 }
 .pays h6{
     font-family: regular;
     opacity: 40%;
-    font-size: .7rem;
+    font-size: 0.596vw;
 }
 .pays h5{
     font-family:primary;
+    font-size: .8vw;
+}
+.pays h4{
+    font-size: .8vw;
 }
