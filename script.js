@@ -107,3 +107,54 @@ outerPay.addEventListener("click",()=>{
      e.stopPropagation();
      innerPay.classList.remove("pay_open") ;
  });
+
+
+
+
+  // Automatically generate dates for the entire month
+  function generateDates() {
+    var dates = [];
+    var currentDate = new Date();
+    var daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+    for (var i = 1; i <= daysInMonth; i++) {
+        var dateString = (currentDate.getMonth() + 1) + '/' + i + '/' + currentDate.getFullYear();
+        dates.push(dateString);
+    }
+    return dates;
+}
+
+var xValues = generateDates();
+var yValues = [25, 49, 44, 24, 50, 24,];
+var barColors = Array.from({ length: xValues.length }, () => 'green'); // Array of green color for each bar
+
+new Chart("myChart", {
+    type: "bar",
+    data: {
+        labels: xValues,
+        datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+        }]
+    },
+    options: {
+        legend: { display: false },
+        title: { display: false },
+        scales: {
+            xAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Date'
+                }
+            }],
+            yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                },
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
